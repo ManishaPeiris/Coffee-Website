@@ -1,0 +1,186 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 40%),
+    linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
+    url("https://tiimg.tistatic.com/fp/1/005/628/organic-arabica-coffee-beans-990.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: transparent;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-color: #5d2c10;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  margin-top: -10px;
+}
+
+.nav-links li:hover {
+  color: #a96239;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+  position: relative;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 0; 
+}
+
+.text-content h1 {
+  font-size: 4rem;
+  color: #ffc66e;
+  margin: 0;
+  margin-left: 80px;
+}
+
+.text-content .accent {
+  color: #ffc66e;
+}
+
+.text-content .sub {
+  color: #a17855;
+}
+
+.sub {
+  position: relative;
+  left: 190px;
+  font-weight: 300;
+}
+
+.text-content p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #888;
+  max-width: 400px;
+  margin-left: 80px;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid #ffc66e;
+  color: #ffc66e;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 480px;
+}
+
+.cta-button:hover {
+  background-color: #ffc66e;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding-left: 10px;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+    gap: 1.5rem;
+  }
+
+  .main-content {
+    padding-left: 2rem;
+  }
+
+  .text-content h1 {
+    font-size: 3rem;
+    margin-left: 40px;
+  }
+
+  .text-content p {
+    margin-left: 40px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 12px 25px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-container {
+    padding-left: 5px;
+  }
+
+  .navbar {
+    padding: 0 0.5rem;
+  }
+
+  .nav-links {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding-left: 1rem;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+  }
+
+  .text-content p {
+    margin-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 150px;
+  }
+}

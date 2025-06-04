@@ -1,0 +1,145 @@
+.about1-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100vw; 
+  background-color: #e5e5e5;
+  color: #5d2c10;
+  overflow: hidden;  
+}
+
+.about1-image {
+  flex: 1;
+  position: relative; 
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('https://img.freepik.com/premium-photo/coffee-bag-with-wooden-isolated-white-background-front-view_289975-99.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  box-sizing: border-box;
+}
+
+.about1-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.about1-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #e5e5e5;
+  z-index: 1; 
+}
+
+.about1-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about1-content p {
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4c3a32;
+  text-align: right;
+}
+
+.about1-button {
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid #5d2c10;
+  color: #5d2c10;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-right: 500px;
+}
+
+.about1-button:hover {
+  background-color: #5d2c10;
+  color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .about1-container {
+    flex-direction: column;
+  }
+
+  .about1-image {
+    height: 50vh;
+  }
+
+  .about1-image::after {
+    width: 50%;
+  }
+
+  .about1-content {
+    padding: 1rem;
+  }
+
+  .about1-content h2 {
+    font-size: 2rem;
+  }
+
+  .about1-content p {
+    font-size: 0.9rem;
+    text-align: left;
+    max-width: 80%; 
+  }
+
+  .about1-button {
+    font-size: 14px;
+    margin-right: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about1-container {
+    flex-direction: column;
+  }
+
+  .about1-image {
+    height: 40vh; 
+  }
+
+  .about1-image::after {
+    width: 60%;
+  }
+
+  .about1-content {
+    padding: 1rem;
+  }
+
+  .about1-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .about1-content p {
+    font-size: 0.85rem;
+    text-align: left;
+    max-width: 90%; 
+  }
+
+  .about1-button {
+    font-size: 12px;
+    margin-right: 0;
+    padding: 0.5rem 1rem;
+  }
+}
