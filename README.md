@@ -1,12 +1,9 @@
-# React + Vite
+This is a modern, responsive coffee-themed website designed and built using React, bundled with Vite for ultra-fast development, and styled entirely with Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Image](https://github.com/user-attachments/assets/8ce114b7-d079-48c6-95ea-effcc5902fd9)
 
-Currently, two official plugins are available:
+![Image](https://github.com/user-attachments/assets/4cd8b5d8-f5a6-4379-b9f3-c67e0bf02a2e)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Image](https://github.com/user-attachments/assets/ec057ecf-2ef8-453c-be13-267542253f66)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Image](https://github.com/user-attachments/assets/a2a40c62-ea7b-4b57-96c2-3beb26542927)
